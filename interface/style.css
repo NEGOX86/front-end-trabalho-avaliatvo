@@ -1,9 +1,28 @@
+       
+.container {
+    width: 90%;          /* Largura do site na tela */
+    max-width: 1000px;   /* Impede que o site fique largo demais em monitores grandes */
+    margin: 0 auto;      /* Centraliza o bloco na tela */
+    background-color: #fff; /* Cor de fundo para destacar do body */
+}
 
-header
-{
+header {
     display: flex;
-    background-color: grey;
+    justify-content: space-around; /* Distribui os links igualmente */
+    background-color: #333;
+    padding: 10px;
 }
-a {
-    background-color: black;
+
+header a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
 }
+
+.main-content {
+    display: flex;
+    gap: 20px; /* Espaço entre as colunas */
+}
+
+.col-esquerda { flex: 2; } /* Ocupa mais espaço */
+.sidebar { flex: 1; }      /* A coluna da direita (Mais Lidos) é menor */
